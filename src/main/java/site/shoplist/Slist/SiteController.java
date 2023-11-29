@@ -37,15 +37,15 @@ public class SiteController {
         // Сортируем данные
         List<Hoz> sortedHozs = new ArrayList<>();
         hozs.forEach(sortedHozs::add);
-        Collections.sort(sortedHozs, new HozComparator());
+        sortedHozs.sort(new HozComparator());
 
         List<ShoppingList> sortedGoods = new ArrayList<>();
         goods.forEach(sortedGoods::add);
-        Collections.sort(sortedGoods, new ShoppingListComparator());
+        sortedGoods.sort(new ShoppingListComparator());
 
         List<Pharmacy> sortedPharmacy = new ArrayList<>();
         pharmacy.forEach(sortedPharmacy::add);
-        Collections.sort(sortedPharmacy, new PharmacyComparator());
+        sortedPharmacy.sort(new PharmacyComparator());
 
         model.addAttribute("hGoods", sortedHozs);
         model.addAttribute("goods", sortedGoods);
@@ -167,15 +167,15 @@ public class SiteController {
         // Сортируем данные
         List<Hoz> sortedHozs = new ArrayList<>();
         hozs.forEach(sortedHozs::add);
-        Collections.sort(sortedHozs, new HozComparator());
+        sortedHozs.sort(new HozComparator());
 
         List<ShoppingList> sortedGoods = new ArrayList<>();
         goods.forEach(sortedGoods::add);
-        Collections.sort(sortedGoods, new ShoppingListComparator());
+        sortedGoods.sort(new ShoppingListComparator());
 
         List<Pharmacy> sortedPharmacy = new ArrayList<>();
         pharmacy.forEach(sortedPharmacy::add);
-        Collections.sort(sortedPharmacy, new PharmacyComparator());
+        sortedPharmacy.sort(new PharmacyComparator());
 
         model.addAttribute("hGoods", sortedHozs);
         model.addAttribute("goods", sortedGoods);
