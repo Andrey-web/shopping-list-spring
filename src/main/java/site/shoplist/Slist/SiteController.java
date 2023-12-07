@@ -10,9 +10,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import site.shoplist.Slist.models.Hoz;
 import site.shoplist.Slist.models.Pharmacy;
 import site.shoplist.Slist.models.ShoppingList;
+import site.shoplist.Slist.models.User;
 import site.shoplist.Slist.repositories.HozRepository;
 import site.shoplist.Slist.repositories.PharmRepository;
 import site.shoplist.Slist.repositories.ShopListRepository;
+import site.shoplist.Slist.repositories.UserRepository;
 
 import java.util.*;
 
@@ -183,7 +185,6 @@ public class SiteController {
         model.addAttribute("tabId", formId);
         return "main";
     }
-
 
     // Классы Comparators внутри файла контроллера
     static class HozComparator implements Comparator<Hoz> {
