@@ -3,13 +3,12 @@ package site.shoplist.Slist.models;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import site.shoplist.Slist.AbstractModel;
 
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = false)
 @Data
 @Entity
 @Table(name = "pharmacy")
-public class Pharmacy extends AbstractModel {
+public class Pharmacy {
 
     private String name;
     private int status;
