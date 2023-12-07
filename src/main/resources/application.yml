@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:mysql://vh364.timeweb.ru:3306/ci52131_shlist
+    username: ci52131_shlist
+    password: Raedge12
+  jpa:
+    show-sql: true
