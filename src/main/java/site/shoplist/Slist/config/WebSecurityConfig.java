@@ -26,6 +26,9 @@ public class WebSecurityConfig {
                         .defaultSuccessUrl("/?tabId=1", true)
                         .permitAll()
                 )
+                .rememberMe(remember -> remember
+                        .key("askdugasdhsajdkn")
+                        .tokenValiditySeconds(365 * 24 * 60 * 60))
                 .logout((logout) -> logout.permitAll());
 
         return http.build();
